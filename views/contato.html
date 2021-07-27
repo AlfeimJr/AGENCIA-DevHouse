@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/css/contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Agencia - devHouse" title="Agencia - devHouse" id="logo">
+        <nav id="lista2">
+            
+            <a href="http://localhost:3000/home"> Home</a>
+            <a href=""> Produtos</a>
+            <a href=""> Depoimentos</a>
+            <a href="http://localhost:3000/blog"> Blog</a>
+            
+        </nav>
+        <div>
+        <a id="Numero">+55 67 998724276</a>
+        <button id="Atendimento">Atendimento </button>
+        </div>
+    </header>
+    <main>
+        <div id="h1">
+            <h1><b>Contato</b></h1>
+            <small id="subtext2"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque ad tempora?<br> Tenetur tempore quae aut fuga cumque, veritatis eligendi </b></small>
+        </div>
+        <form action="receber-contato" id="arrumar" method="POST">
+            <div id="nome-completo">
+                <input class="input-padrao" type="text" name="nome" placeholder="Digite seu nome">
+                <input class="input-padrao" type="text" name="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+            <input class="input-padrao" type="tel" placeholder="Digite seu telefone" name="telefone">
+            <select name="servico" id="servico">
+                <option selected disabled>Selecione um serviço</option>
+                <option value="site">Site</option>
+                <option value="sitema">Sistema</option>
+                <option value="aplicativo">Aplicativo</option>
+            </select>         
+            <button id="botao" type="reset">Limpar dados</button>
+            <button id="botao" type="submit">Enviar Agora</button>            
+        </form>
+
+        
+   </main>
+</body>
+</html>

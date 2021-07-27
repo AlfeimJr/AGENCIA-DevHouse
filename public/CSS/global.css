@@ -1,0 +1,17 @@
+
+body{
+    font-family: "Roboto"
+}
+
+.icon-social{
+    width: 80px;
+}
+header{
+
+        background: blue;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+}
+

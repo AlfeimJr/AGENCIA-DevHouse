@@ -1,0 +1,88 @@
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto"
+}
+
+#Atendimento{
+    width: 150px;;
+    height: 40px;;
+    background-color:blue;
+    border-radius: 50px;
+    color: white;
+    border-color: blue;
+}
+#Botao1{
+    display: flex;
+    align-items: center;
+}
+#Numero{
+    color: #1E266D;
+}
+nav a{
+    color: #1E266D;
+    margin-left:10px;
+    text-decoration: none;
+}
+main{
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    
+}
+#arrumar{
+    margin-left: 200px;
+}
+h1{
+    font-size: 40px;
+    color: #1E266D;
+}
+.input-padrao{
+    width: 87%;
+    height: 50px;
+    border-radius: 4px;
+    border-color: gray;
+    font-size: 18px;
+    padding: 0 40px;
+    margin: 10px;
+    
+}
+.input-padrao:focus{
+    outline: none !important;
+    border-color: green;
+    box-shadow: 0 0 10px green;
+    transition: 1s;
+}
+#nome-completo{
+    display: flex;
+    gap: 10px;
+}
+#servico{
+    width: 87%;
+    height: 50px;
+    border-radius: 4px;
+    border-color: gray;
+    font-size: 18px;
+    padding: 0 40px;
+    margin: 10px;
+    box-sizing: border-box;
+ 
+}
+#botao{
+    width: 17%;
+    height: 50px;
+    border-radius: 4px;
+    border-color: gray;
+    border: none;
+    background-color: #3751FF;
+    color: white;
+    margin-left: 10px;
+    box-sizing: border-box;
+    transition: background-color 1s;
+
+}
+#botao[type=submit]:hover{
+ background-color: green;
+}

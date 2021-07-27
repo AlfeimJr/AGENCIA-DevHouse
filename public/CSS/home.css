@@ -1,0 +1,373 @@
+body
+{width:100%;margin: 0 auto;min-width:600px;max-width:2000px}
+#Atendimento{
+    width: 150px;;
+    height: 40px;;
+    background-color:blue;
+    border-radius: 50px;
+    color: white;
+    border-color: blue;
+}
+#Numero{
+    color: #1E266D;
+}
+#Botao1{
+    display: flex;
+    align-items: center;
+}
+#Compra{
+    width: 150px;;
+    height: 40px;;
+    background-color:blue;
+    border-radius: 50px;
+    color: white;
+}
+#features{
+    width: 150px;;
+    height: 40px;;
+    background-color:rgb(220, 220, 255);
+    border-radius: 50px;
+    color: rgb(80, 50, 250);
+    border-color:rgb(220, 220, 255);
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main section{
+    font-family:"Roboto";
+}
+#lista2{
+margin-right: 1000px;
+}
+nav a{
+    color: #1E266D;
+    margin-left:10px;
+    text-decoration: none;
+    
+}
+#Texto{
+    text-align: center;
+    color: #1E266D;
+    font-size: 80px;
+    font-family:"Roboto";
+}
+#Texto2{
+    text-align: center;
+    color: rgb(178, 178, 250);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 60px;
+}
+#lista{
+    text-align: center;
+    margin-right: 60px;
+}
+#Compra{
+    border-color: blue;
+    margin-right: 20px;
+}
+#imagem{
+    margin-top: 68px;
+    text-align: center;
+    margin-left: 170px;
+    display: block;
+
+}
+#Texto3{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(124, 124, 124);
+}
+#cinemaxTitulo{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    color: rgb(197, 197, 197);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#quadrado{
+    width: 70px;;
+    height: 60px;;
+    background-color:rgb(0, 255, 157);
+    border-radius: 4px;
+    border-color: rgb(0, 255, 157);
+    margin-bottom: 220px;
+    
+}
+#quadrados{
+    text-align:end;
+    margin-right: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+    
+}
+#quadrado2{
+    width: 70px;;
+    height: 60px;;
+    background-color:#FACFCA;
+    border-radius: 4px;
+    border-color: #FACFCA;
+    margin-bottom: 220px;
+
+}
+#quadrado3{
+    width: 70px;;
+    height: 60px;;
+    background-color:#F8AEC3;
+    border-radius: 4px;
+    border-color: #F8AEC3;
+    
+}
+#Texto4{
+position: absolute;
+width: 1214px;
+height: 120px;
+left: 380px;
+top: 1400px;
+
+font-family:"Roboto";
+font-weight: 500;
+font-size: 48px;
+line-height: 100px;
+
+text-align: center;
+
+color: #1E266D;
+}
+#pessoas{
+    margin-inline-start: 200px;
+    margin-top: -390px;
+    display: flex;
+   
+}
+#textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 280px;
+    margin-top: -40px;
+    
+}
+#banner2{
+    width: 809px;
+height: 1400px
+}
+#subtitulo1{
+    font-size: 22px;
+    color: #1E266D;
+}
+#subtexto1{
+    font-size: 18px;
+    color: #455880;
+    
+}
+#subtitulo2{
+    margin-top: 100px;
+    font-size: 22px;
+    color: #1E266D;
+}
+#subtexto2{
+    font-size: 18px;
+    color: #455880;
+
+}
+#subtitulo3{
+    font-size: 22px;
+    color: #1E266D;
+    margin-top: 100px;
+}
+#subtexto3{
+    font-size: 18px;
+    color: #455880;
+}
+#abaixo{
+    font-family:"Roboto";
+    font-size: 48px;
+    
+}
+#Texto5{
+    text-align: center;
+    color: #1E266D;
+}
+#quadrados2{
+    flex-direction:row;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly
+}
+#botao1{
+    border: 3px solid transparent;
+    border: 3px solid rgba(69, 88, 128, 0.2);
+    width: 300px;
+    height:400px;
+    border-radius: 4px;
+    color: #455880;
+    font-size: 18px;
+    
+}
+    
+    
+#botao2{
+    border: 3px solid transparent;
+    border: 3px solid rgba(69, 88, 128, 0.2);
+    width: 300px;
+    height:400px;
+    border-radius: 4px;
+    color: #455880;
+    font-size: 18px;
+}
+#botao3{
+    border: 3px solid transparent;
+    border: 3px solid rgba(69, 88, 128, 0.2);
+    width: 300px;
+    height:400px;
+    border-radius: 4px;
+    color: #455880;
+    font-size: 18px;
+}
+#user1{
+   position: absolute;
+    margin-left: 360px;
+   margin-top: -150px;
+    
+}
+#user1text1{
+    position: absolute;
+    font-family: "Roboto";
+    margin-left: 335px;
+   margin-top: -70px;
+   font-size: 22px;
+   color: #1E266D
+   ;
+}
+#user1text2{
+    font-family: "Roboto";
+    position: absolute;
+    margin-left: 355px;
+   margin-top: -50px;
+   color: #455880;
+
+}
+#user2{
+    position: absolute;
+    margin-left: 920px;
+   margin-top: -150px;
+}
+#user2text1{
+    position: absolute;
+    font-family: "Roboto";
+    margin-left: 890px;
+   margin-top: -70px;
+   font-size: 22px;
+   color: #1E266D;
+}
+#user2text2{
+    position: absolute;
+    font-family: "Roboto";
+    margin-left: 905px;
+   margin-top: -50px;
+   font-size: 18px;
+   color: #455880;
+}
+#user3{
+    position: absolute;
+    margin-left: 1478px;
+   margin-top: -150px;
+}
+#user3text1{
+    position: absolute;
+    font-family: "Roboto";
+    margin-left: 1455px;
+   margin-top: -70px;
+   font-size: 22px;
+   color: #1E266D;
+}
+#user3text2{
+    position: absolute;
+    font-family: "Roboto";
+    margin-left: 1470px;
+   margin-top: -50px;
+   font-size: 18px;
+   color: #455880;
+}
+#rectangle{
+    width:1900px;
+    height:323px;
+    background:#3751FF
+    ;
+    margin-top: 200px;
+}
+#What{
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 200px;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: white;
+
+}
+#get{
+    position: absolute;
+    width: 260px;
+    height: 56px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #455880;
+    border-color: rgb(255, 255, 255);
+    margin-left: 1500px;
+    margin-top: -170px;
+}
+#subtexto{
+    margin-left: 1500px;
+    margin-top: -120px;
+    font-family: "Roboto";
+    color: white;
+    font-size: 16px;
+}
+#menu{
+    display: none;
+}
+
+@media(max-width: 465px){
+  #imagem{
+      display: none;
+  }
+  #logo{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 400px;
+    height: 100px
+  }
+  #Atendimento{
+      display: none;
+  }
+  nav a{
+      display: none;
+  }
+  #menu{
+      display: block;
+      display: flex;
+      margin-left: 600px;
+      margin-top: -10px;
+      width: 90px;
+      height: 60px  
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
