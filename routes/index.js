@@ -1,26 +1,19 @@
 const express = require('express')
-const path = require('path')
+const path = require('path');
+const indexController = require('../controllers/index');
 const routes = express.Router();
 const depoimentos = require('../models/depoimentos')
 
-routes.get('/', (req, res)=>{
-    res.render('home', {titulo: "Sua empresa vai ser incrivel"})
-})
+routes.get('/', indexController.home)
 
-routes.get('/home', (req, res)=>{
-    res.render('home', {titulo: "Sua empresa vai ser incrivel"})
-})
 
-routes.get('/manutencao', (req, res)=>{
-    res.sendFile(path.resolve("views", "manutencao"))})
+routes.get('/home', indexController.home)
 
-routes.get('/blog', (req, res)=>{
-    res.sendFile(path.resolve('views', 'blog.html'))
-})
+routes.get('/manutencao', indexController.exibirManutencao)
 
-routes.get('/contato', (req, res)=>{
-    res.sendFile(path.resolve('views', 'contato.html'))
-})
+routes.get('/blog', indexController.exibirBlog)
+
+routes.get('/contato', indexController.exibirContato)
 
 routes.get('/depoimentos', (req, res)=>{  
     res.render('depoimentos', { depoimentos, titulo: "Depoimentos" })
@@ -32,4 +25,4 @@ routes.post('/receber-contato', (req,res)=> {
 })
 
 
-module.exports = routes
+module.exports = routes;
