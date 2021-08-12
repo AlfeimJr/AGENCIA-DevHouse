@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global.css" />
     <title>Depoimentos</title>
-</head>
-<body>
-    <%- include('componentes/header')%>
+  </head>
+  <body>
+    <%- include('components/header') %>
     <main>
-        <form action="">
-            <label>Seu nome</label>
-            <input type="text" name="nome"/>
+      <form action="/cadastrar-depoimento" method="POST">
+        <label>Seu nome</label>
+        <input type="text" name="autor" />
 
-            <label>Titulo do depoimento</label>
-            <input type="text" name="nome"/>
+        <label>Titulo do seu depoimento</label>
+        <input type="text" name="titulo" />
 
-        </form>
+        <label>Descrição do depoimento</label>
+        <textarea name="descricao"></textarea>
+
+        <button type="submit">Enviar depoimento</button>
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>

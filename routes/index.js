@@ -15,9 +15,10 @@ routes.get('/blog', indexController.exibirBlog)
 
 routes.get('/contato', indexController.exibirContato)
 
-routes.get('/depoimentos', (req, res)=>{  
-    res.render('depoimentos', { depoimentos, titulo: "Depoimentos" })
-})
+routes.get('/depoimentos', indexController.exibirDepoimentos)
+
+routes.get("/cadastrar-depoimento", indexController.exibirFormDepoimento);
+routes.post("/cadastrar-depoimento", indexController.cadastrarDepoimento);
 
 routes.post('/receber-contato', (req,res)=> {
     console.log(req.body);
