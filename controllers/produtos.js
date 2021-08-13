@@ -1,5 +1,5 @@
-const path = require('path')
-const produtoModel = ('../models/produtos')
+
+const produtoModel = require ('../models/produtos')
 
 const produtosController = {
     produto: ((req, res)=>{
@@ -10,7 +10,7 @@ const produtosController = {
     }),
     salvarProduto: ((req, res)=>{
         const {nome, descricao,imagem} = req.body
-        produtoModel.cadastrarProdutos(nome, descricao, imagem)
+        produtoModel.cadastrarProduto(nome, descricao, imagem)
 
         console.log(produtoModel.produto)
 
