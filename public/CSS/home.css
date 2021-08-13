@@ -349,6 +349,13 @@ height: 1400px
     
 
 }
+table, th, td {
+    border: 1px solid black;
+  }
+  table{
+      width: 100%;
+  }
+    
 @media(max-width: 465px){
   #imagem{
       display: none;

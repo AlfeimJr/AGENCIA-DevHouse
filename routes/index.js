@@ -23,7 +23,8 @@ routes.post("/cadastrar-depoimento", indexController.cadastrarDepoimento);
 routes.post('/receber-contato', (req,res)=> {
     console.log(req.body);
     res.send('contato recebido')   
-})
+});
+
 
 
 module.exports = routes;

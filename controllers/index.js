@@ -31,6 +31,8 @@ const indexController ={
         modelDepoimentos.cadastrarDepoimento(autor, titulo, descricao);
         return res.redirect("/depoimentos");
       },
+
+      
 }
 
 module.exports = indexController;

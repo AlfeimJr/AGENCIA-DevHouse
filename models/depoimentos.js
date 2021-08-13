@@ -1,4 +1,4 @@
-const depoimentos =[
+let depoimentos =[
     {
         autor: 'vinny',
         titulo: 'depoimento fake',
