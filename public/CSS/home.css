@@ -355,6 +355,25 @@ table, th, td {
   table{
       width: 100%;
   }
+  .botaoProdutos{
+    /* padding-left: 80%;
+    padding-bottom: 1%;
+    padding-top: 4%; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    
+  }
+  .Produtos{
+    border-radius: 40px;
+    padding: 10px;
+    border-color: none;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    
+  }
+
     
 @media(max-width: 465px){
   #imagem{
@@ -380,6 +399,7 @@ table, th, td {
       width: 90px;
       height: 60px  
   }
+
 
 
 

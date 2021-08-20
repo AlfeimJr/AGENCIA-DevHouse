@@ -10,6 +10,9 @@
 <body>
     <%- include('../components/header') %>
     <main>
+        <div class="botaoProdutos">
+        <a href="http://localhost:3000/cadastroProduto" class="Produtos">Cadastrar Produtos</a>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -19,15 +22,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>40028922</td>
-                    <td>site incrivel</td>
-                    <td>
-                        <button>excluir</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <% produtos.forEach(produto => { %>
+                        <tr>
+                            <td><%= produto.id %></td>
+                            <td><%= produto.nome %></td>
+                            <td>
+                                <form
+                                method="POST"
+                                action="/deletar-produtos/<%= produto.id %>?_method=DELETE">
+                                <button>Excluir</button>
+                                </form>
+                            </td>
+                            </tr>
+                            <% }); %>
+                             </td>
+                        </tr>
             </tbody>
         </table>
+        
     </main>
 
 </body>

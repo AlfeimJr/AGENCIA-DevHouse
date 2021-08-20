@@ -1,35 +1,48 @@
-const { uuid } = require("uuidv4");
-let listaDeProdutos = [
-  {
-    id: uuid(),
-    nome: "Site",
-    descricao: "Seu site incrivel",
-    imagem:
-      "https://cdn.w600.comps.canstockphoto.com.br/loja-site-web-produto-conceito-bot%C3%A3o-vetor-cliparte_csp52582154.jpg",
-  },
-];
+const { v4:generateID } = require("uuid");
 
-function cadastrarProduto(nome, descricao, imagem) {
+const  produtoModel = {
+  listaDeProdutos: [
+    {
+      id: generateID(),
+      nome: "Site",
+      descricao: "Seu site incrivel",
+      imagem:
+        "https://cdn.w600.comps.canstockphoto.com.br/loja-site-web-produto-conceito-bot%C3%A3o-vetor-cliparte_csp52582154.jpg",
+    },
+    {
+      id: generateID(),
+      nome: "Plataforma",
+      descricao: "Seu site incrivel",
+      imagem:
+        "https://cdn.w600.comps.canstockphoto.com.br/loja-site-web-produto-conceito-bot%C3%A3o-vetor-cliparte_csp52582154.jpg",
+    },
+  ],
+
+ cadastrarProduto: function(nome, descricao, imagem) {
   const novoProduto = {
-    id: uuid(),
+    id: generateID(),
     nome,
     descricao,
     imagem,
   };
 
-  return listaDeProdutos.push(novoProduto);
-}
+  return this.listaDeProdutos.push(novoProduto);
+},
 
-function excluirProduto(id) {
-  const novaListaDeProdutos = listaDeProdutos.filter(
-    (produto) => produto.id != id
+  excluirProduto: function(id) {
+    console.log(id)  
+    const novaListaDeProdutos = this.listaDeProdutos.filter(
+    (produto) => produto.id !== id
   );
 
-  if (novaListaDeProdutos.length >= listaDeProdutos.length) return false;
+  if (novaListaDeProdutos.length >= this.listaDeProdutos.length) return false;
 
-  listaDeProdutos = novaListaDeProdutos;
+  this.listaDeProdutos = novaListaDeProdutos;
 
   return true;
-}
+  
+},
+};
 
-module.exports = { listaDeProdutos, cadastrarProduto, excluirProduto };
+
+module.exports = produtoModel;
